@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import useEffect from "react";
 import { ListGroup, Card, Form, Button, Table } from "react-bootstrap";
 import Icon from "./IconComponent";
-let total=0;
+let totalScore=0;
 const countTotal=(list) => {
-    list.map((item)=>(
-        total=total+parseInt(item.score)
+    list.map((quest)=>(
+        totalScore=totalScore+parseInt(quest.score)
         
     ))
- return total;
+ return totalScore;
 }
 const Result = ({ Mylist }) => {
    
@@ -17,7 +17,7 @@ const Result = ({ Mylist }) => {
             <div>
                 <Card style={{ width: '40rem' }}>
                     <Card.Body>
-                        <Card.Header className="text-center">Quize</Card.Header>
+                        <Card.Header className="text-center">Quiz</Card.Header>
 
                         <ListGroup variant="flush">
                             <ListGroup.Item>

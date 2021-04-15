@@ -1,8 +1,7 @@
 import React from "react";
 import { TickCircleIcon,CrossIcon } from 'evergreen-ui';
-let value = 0;
-const Icon = ({ value }) => {
-    if (value == 0) {
+const Icon = ({ value: val }) => {
+    if (val == 0) {
         return (
             
             <CrossIcon color="danger" marginRight={16} />
